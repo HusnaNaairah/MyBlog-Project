@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Code Diaries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="images">
+        <img src="bg.jpg" id="bg">
+        <img src="moon2.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <!-- <img src="sunflowers.jpg" id="sunflowers"> -->
+        <h2 id="text">Simple Code Diaries</h2>
+    </section>
+    <p class="intro">
+        Hi everyone! I'm Husna Naairah. I recently discovered CSS, which I found super interesting. I decided to try something with this new interest, and this is what I came up with. Initially, I thought about sharing some photos to showcase my photography, but I ended up trying out blogging. It's just a beginner-level project. You might notice some sections are more improved while others are quite ordinary. That's because I was learning on the go. Take a look, and let me know what you think. Any suggestions are welcome, even small things like adjusting the font size, changing the background colour, and more. Just so you know, the mobile version is better than the desktop one. I applied what I learned in CSS, experimenting with different layouts. Hope you enjoy checking it out!
+    </p>
+
+    <section class="parallax1">
+        <div class="parallax-inner">
+            <div class="heading s1">
+                <a href="sunset.html" target="_blank"><h3 id="text1">The Most Breathtaking Sunset of My Life</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <br><br><br><br> -->
+
+    <section class="parallax2">
+        <div class="parallax-inner">
+            <div class="heading s2">
+                <a href="palace.html" target="_blank"><h3 id="text2">A Personal Account of Taj Falaknuma Palace</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <br><br><br><br> -->
+
+    <section class="parallax3">
+        <div class="parallax-inner">
+            <div class="heading s3">
+                <a href="heartfelt.html" target="_blank"><h3 id="text3">A Family's Silent Impact</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <p class="intro">Allow me to share something I take pride in—a painting that holds a special place in my heart. It's not the typical mountain, river, or flower scene that many choose for their artwork. Instead, it captures a slice of Golconda Fort. While it deviates a bit from the usual theme of the website, focused on blogging and maintaining a proper homepage, it symbolizes my growing appreciation for the beauty found in the messy and imperfect. I enjoy showcasing things that are unusually interesting and fun.</p>
+
+    <div class="row">
+        <div class="image img4border">
+            <div class="img4 img"><img src="the click.jpg" alt="Sunset"></div>
+            <p class="img_name">I Click</p>           
+        </div>
+
+        <div class="image img5border">
+            <div class="img5 img"><img src="the painting.jpg" alt="Twilight"></div>
+            <p class="img_name">I Paint</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        If you have any thoughts or feedback, feel free to email me at: <a href="mailto: husna.naairah02@gmail.com" target="_blank">husna.naairah02@gmail.com</a>
+    </div>  
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left =  value * 0.5 + 'px';
+            moon.style.top = - value * 0.25 + 'px';
+            mountain.style.top = - value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+    
+</body>
+</html>
